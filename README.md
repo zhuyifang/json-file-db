@@ -31,7 +31,9 @@ row:json格式文件
 ```
 const db = new JsonDb('/Users/xxx/Downloads/112233',23)
 db.table('table1').add('a2',{a:2})
-db.table('table1').list()
+
+db.table('table1').find() // return []
+db.table('table1').find(['a1']) // return  []
 ```
 ![image](https://user-images.githubusercontent.com/16346219/130312058-a9d5dcb8-c13f-4557-8e1b-bdb6ec06990e.png)
 
